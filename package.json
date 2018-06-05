@@ -1,30 +1,37 @@
 {
   "name": "pagecraft",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "classnames": "^2.2.5",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-jss": "^8.4.0",
-    "react-scripts": "1.1.4"
-  },
+  "version": "1.0.0",
+  "description": "pagecraft React component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "16.x"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.4.6",
-    "@storybook/addon-knobs": "^3.4.6",
-    "@storybook/addon-links": "^3.4.6",
-    "@storybook/addons": "^3.4.6",
-    "@storybook/react": "^3.4.6",
-    "babel-core": "^6.26.3",
-    "babel-runtime": "^6.26.0",
-    "eslint": "^4.19.1"
-  }
+    "nwb": "0.21.x",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "author": "",
+  "homepage": "",
+  "license": "MIT",
+  "repository": "",
+  "keywords": [
+    "react-component"
+  ]
 }

@@ -1,7 +1,7 @@
 {
-  "name": "pagecraft",
+  "name": "@fwdmovement/pagecraft",
   "version": "1.0.0",
-  "description": "pagecraft React component",
+  "description": "Repository of Reusable React Resources",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
